@@ -56,6 +56,7 @@ public abstract class BasePage {
      */
     public void waitUntilLoaderScreenDisappear() {
         try {
+          //  BrowserUtils.waitFor(2);
             WebDriverWait wait = new WebDriverWait(Driver.get(), 15);
             wait.until(ExpectedConditions.invisibilityOf(loaderMask));
         } catch (Exception e) {
