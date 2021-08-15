@@ -33,7 +33,7 @@ public class FilteringStepDefs {
         }else if(usertype.equals("store manager")){
             new LoginPage().login(ConfigurationReader.get("store_manager_username"),ConfigurationReader.get("store_manager_password"));
         }else{
-            System.out.println("invalid user");
+            System.out.println("invalid userID");
         }
     }
 
