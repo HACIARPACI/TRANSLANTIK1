@@ -1,13 +1,13 @@
 
 Feature:Filtering Table Actions
-
+  @haci
   Scenario Outline:Hidden Manage Filter
     Given the "<usertype>" user is logged in
     When the user navigates to "Fleet" "Vehicles" page
     Then Manage filters should be hidden
     Examples:
       | usertype     |
-      | driver       |
+      | drive       |
       | sales manager |
       | store manager |
 
@@ -44,7 +44,7 @@ Scenario Outline: After Clicking filter , manage Filter options appears
 #        | sales manager | Tags                |
 #        | sales manager | Seat Number         |
 #        | sales manager | First Contract Date |
-   @haci
+
   Scenario Outline: using reset button
     Given the "<usertype>" user is logged in
     When the user navigates to "Fleet" "Vehicles" page
